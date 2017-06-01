@@ -1,0 +1,4 @@
+{
+	"deckIdUrl": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+	"deckCardsUrl": "https://deckofcardsapi.com/api/deck/deckId/draw/?count=9"
+}
