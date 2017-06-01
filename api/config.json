@@ -1,4 +1,8 @@
 {
 	"deckIdUrl": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
-	"deckCardsUrl": "https://deckofcardsapi.com/api/deck/deckId/draw/?count=9"
+	"deckCardsUrl": "https://deckofcardsapi.com/api/deck/deckId/draw/?count=9",
+	"server": {
+		"host": "127.0.0.1",
+		"port": "8000"
+	}
 }

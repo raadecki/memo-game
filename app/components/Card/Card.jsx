@@ -24,7 +24,7 @@ class Card extends React.PureComponent {
 		if(this.props.matched) {
 			view = <span><img className="img-responsive img-rounded center-block" src={this.props.imageSrc} /></span>
 		} else {
-			view = <span><button className="btn btn-default btn-card-back" onClick={onCardSelect}>PICK CARD</button></span>
+			view = <span><button className="btn btn-default btn-card-back" onClick={onCardSelect}>SHOW CARD</button></span>
 		}
 
 		return (

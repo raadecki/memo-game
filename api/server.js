@@ -13,8 +13,8 @@ let highscores = [];
 // Create a server with a host and port
 const server = new hapi.Server();
 server.connection({
-	host: '127.0.0.1',
-	port: 8000,
+	host: config.server.host,
+	port: config.server.port,
 	routes: { 
 		cors: true 
 	},

@@ -51,7 +51,7 @@ function saveScore(state) {
 function resetHighscore(state) {
 	return fetch(`${config.apiUrl}/highscore/reset`, {
     	method: 'POST'
-	}).then(() => _.set('highscores', [], state));
+	}).then(() => applyHighscores(state, []));
 }
 
 // state manipulation functions
@@ -82,7 +82,11 @@ function matchCards(state, deckKey, matchedDeckKey) {
 	return _.flow(
 		_.set('matches', ++state.matches),
 		(state) => _.set('finished', state[`${deckKey}Codes`].length === state.matches, state),
-		(state) => updateCards(state, deckKey, matchedDeckKey, true)
+		(state) => updateCards(state, deckKey, matchedDeckKey, true),
+		(state) => {
+			console.log(state);
+			return state;
+		}
 	)(state)
 }
 
