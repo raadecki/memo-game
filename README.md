@@ -21,6 +21,7 @@ After `yarn start` documentation is available at `http://127.0.0.1:8080/document
 
 ## Requirements
 
+Tested on Chrome since it has native support for fetch function
 Install `yarn`, read how [here](https://yarnpkg.com/en/docs/install).
 
 ## Installation
